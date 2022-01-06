@@ -13,10 +13,10 @@ const Feed = () => {
     <Container className={classes.container}>
       <Post title="Civil Engineering" img="https://allplan.asia/wp-content/uploads/2020/06/how-much-do-civil-engineer-make-1600x900.jpg"/>
       <Post title="Computer Science" img="https://www.pba.edu/_resources/images/images_on_pages/computer-system.jpg"/>
-      <Post title="What To Do In London" img="https://images.pexels.com/photos/7245535/pexels-photo-7245535.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-      <Post title="Recipes That Will Make You Crave More" img="https://images.pexels.com/photos/7245477/pexels-photo-7245477.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-      <Post title="Shortcut Travel Guide to Manhattan" img="https://images.pexels.com/photos/7078467/pexels-photo-7078467.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-      <Post title="Killer Actions to Boost Your Self-Confidence" img="https://images.pexels.com/photos/7833646/pexels-photo-7833646.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+      <Post title="Ecology" img="https://eeb.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/EEB%20Custom2.jpg?itok=lmmFxCG1&timestamp=1576301524"/>
+      <Post title="Biology Engineering" img="https://www.studyinternational.com/wp-content/uploads/2020/06/shutterstock_691541056.jpg"/>
+      <Post title="Health" img="https://www.slma.cc/wp-content/uploads/2018/01/SLMA_ProsPCP.jpg"/>
+      <Post title="Language" img="https://s3e8p5g8.rocketcdn.me/wp-content/uploads/2018/11/english_major.jpg"/>
       {/* <Footer></Footer> */}
     </Container>
   );

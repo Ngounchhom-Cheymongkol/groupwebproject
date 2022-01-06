@@ -13,8 +13,8 @@ const Majorpage=()=>{
                     paddingTop:"100px",
                 }}>
                     
-                    <Grid item sm={12}>
-                      <GroupedSelect></GroupedSelect>
+                    <Grid item sm={12} xs={12}>
+                        <h1>Major</h1>
                     </Grid>
                 </Grid>
                 <Grid container style={{
@@ -30,35 +30,35 @@ const Majorpage=()=>{
                     </Grid>
                 </Grid>
                 <Grid container>
-                    <Grid style={{backgroundColor:"#06bdfc",height:"50px"}} item sm={4}>
+                    <Grid style={{backgroundColor:"#06bdfc",height:"50px"}} item sm={4} xs={4}>
                         
                     </Grid>
-                    <Grid style={{backgroundColor:"#06bdfc",height:"50px"}} item sm={4}>
+                    <Grid style={{backgroundColor:"#06bdfc",height:"50px"}} item sm={4} xs={4}>
                         
                     </Grid>
-                    <Grid style={{backgroundColor:"",height:"50px"}} item sm={4}>
+                    <Grid style={{backgroundColor:"",height:"50px"}} item sm={4} xs={4}>
                         
                     </Grid>
 
 
-                            <Grid style={{backgroundColor:"#06bdfc",height:"50px"}} item sm={4}>
+                            <Grid style={{backgroundColor:"#06bdfc",height:"50px"}} item sm={4} xs={4}>
                                 
                             </Grid>
-                            <Grid style={{backgroundColor:"",height:"50px"}} item sm={4}>
+                            <Grid style={{backgroundColor:"",height:"50px"}} item sm={4} xs={4}>
                                 
                             </Grid>
-                            <Grid style={{backgroundColor:"#7933ff",height:"50px"}} item sm={4}>
+                            <Grid style={{backgroundColor:"#7933ff",height:"50px"}} item sm={4} xs={4}>
                                 
                             </Grid>
 
 
-                    <Grid style={{backgroundColor:"white",height:"50px"}} item sm={4}>
+                    <Grid style={{backgroundColor:"white",height:"50px"}} item sm={4} xs={4}>
                         
                     </Grid>
-                    <Grid style={{backgroundColor:"#7933ff",height:"50px"}} item sm={4}>
+                    <Grid style={{backgroundColor:"#7933ff",height:"50px"}} item sm={4} xs={4}>
                         
                     </Grid>
-                    <Grid style={{backgroundColor:"#7933ff",height:"50px"}} item sm={4}>
+                    <Grid style={{backgroundColor:"#7933ff",height:"50px"}} item sm={4} xs={4}>
                         
                     </Grid>
 
