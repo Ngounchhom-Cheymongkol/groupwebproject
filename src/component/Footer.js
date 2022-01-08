@@ -2,6 +2,7 @@ import { Container, Grid, makeStyles, Button } from "@material-ui/core"
 import { Facebook, Instagram, Twitter, YouTube } from "@material-ui/icons";
 const useStyle=makeStyles((theme)=>({
     FooterCon:{
+        width:"100%",
         backgroundColor:"white",
         color:"#05192d",
         paddingTop:"20px",

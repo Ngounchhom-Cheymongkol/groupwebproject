@@ -3,6 +3,7 @@ import { Grid, makeStyles, Paper } from "@material-ui/core";
 import Footer from "../../component/Footer"
 import Feed from "../../component/Feed"
 import GroupedSelect from '../../component/GroupSelect';
+import FooterStyle from '../../component/FooterStyle';
 const Majorpage=()=>{
     return(
        <div>
@@ -65,6 +66,7 @@ const Majorpage=()=>{
                 </Grid>
             </div>
             <Feed></Feed>
+            <FooterStyle></FooterStyle>
             <Footer></Footer>
        </div>
     );

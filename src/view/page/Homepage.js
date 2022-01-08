@@ -1,7 +1,10 @@
 import HomepageNavbar from '../../component/HomepageNavbar';
-import { Grid, makeStyles, Paper } from "@material-ui/core";
+import { Grid, makeStyles, Paper, Typography } from "@material-ui/core";
 import Footer from "../../component/Footer"
 import Feed from "../../component/Feed"
+import FacultyCard from '../../component/FacultyCard';
+import FooterStyle from '../../component/FooterStyle';
+import Carousell from '../../component/Carousal';
 const Homepage=()=>{
     return(
        <div>
@@ -11,17 +14,15 @@ const Homepage=()=>{
                     padding:"50px",
                     paddingTop:"100px",
                 }}>
-                    <Grid item sm={2}>
+                    <Grid item sm={2} xs={0}>
                         
                     </Grid>
-                    <Grid item sm={8}>
-                        <Paper>
-                            <img width={"100%"} src="https://res.cloudinary.com/highereducation/image/upload/c_fill,f_auto,fl_lossy,q_auto,w_1200,h_630/v1566232749/BestColleges.com/BC-Career-Mechanical_engineering_vu3sha.jpg">
-                            </img>
-                        </Paper>
+                    <Grid item sm={8} xs={12}>
+                       <Carousell></Carousell>
                     </Grid>
-                    <Grid item sm={2}> 
+                    <Grid item sm={2} xs={0}> 
                     </Grid>
+                   
                 </Grid>
                 <Grid container>
                     <Grid style={{backgroundColor:"#06bdfc",height:"30px"}} item sm={4} xs={4}>
@@ -33,8 +34,6 @@ const Homepage=()=>{
                     <Grid style={{backgroundColor:"",height:"30px"}} item sm={4} xs={4}>
                         
                     </Grid>
-
-
                             <Grid style={{backgroundColor:"#06bdfc",height:"30px"}} item sm={4} xs={4}>
                                 
                             </Grid>
@@ -58,46 +57,31 @@ const Homepage=()=>{
 
                 </Grid>
             </div>
+
+            <Grid container style={{
+                marginTop:"30px"
+            }}>
+                <Grid item sm={4} style={{padding:"15px"}}>
+                        <FacultyCard>
+                        </FacultyCard>
+                </Grid>
+                <Grid item sm={4} style={{padding:"15px"}}>
+                        <FacultyCard>
+                            </FacultyCard>
+                </Grid>
+                <Grid item sm={4} style={{padding:"15px"}}>
+                        <FacultyCard>
+                            </FacultyCard>
+                </Grid>
+            </Grid>
+
+            <h1>Major</h1>
             <Feed></Feed>
+
+
+            {/* Design Footer  */}
                 <Grid container style={{backgroundColor:"#7933ff"}} >
-                        <Grid style={{backgroundColor:"#ff6ea9",height:"30px"}} item sm={2} xs={2}>
-                            
-                        </Grid>
-                        <Grid style={{backgroundColor:"#213147",height:"30px"}} item sm={2} xs={2}>
-                            
-                        </Grid>
-                        <Grid style={{backgroundColor:"#05192d",height:"30px"}} item sm={2} xs={2}>
-                            
-                        </Grid>
-                        <Grid style={{backgroundColor:"#05192d",height:"30px"}} item sm={2} xs={2}>
-                            
-                        </Grid>
-                        <Grid style={{backgroundColor:"#05192d",height:"30px"}} item sm={2} xs={2}>
-                            
-                        </Grid>
-                        <Grid style={{backgroundColor:"#06bdfc",height:"30px"}} item sm={2} xs={2}>
-                            
-                        </Grid>
-
-
-                                <Grid style={{backgroundColor:"#7933ff",height:"30px"}} item sm={2} xs={2}>
-                                    
-                                    </Grid>
-                                    <Grid style={{backgroundColor:"#06bdfc",height:"30px"}} item sm={2} xs={2}>
-                                        
-                                    </Grid>
-                                    <Grid style={{backgroundColor:"#7933ff",height:"30px"}} item sm={2} xs={2}>
-                                        
-                                    </Grid>
-                                    <Grid style={{backgroundColor:"#7933ff",height:"30px"}} item sm={2} xs={2}>
-                                        
-                                    </Grid>
-                                    <Grid style={{backgroundColor:"#7933ff",height:"30px"}} item sm={2} xs={2}>
-                                        
-                                    </Grid>
-                                    <Grid style={{backgroundColor:"#7933ff",height:"30px"}} item sm={2} xs={2}>
-                                        
-                                    </Grid>
+                        <FooterStyle></FooterStyle>
 
 
                                     
@@ -109,7 +93,7 @@ const Homepage=()=>{
                             }}>
                                 <h1>What is KhmerHope?</h1>
                             <p>
-                            Learn the data skills you need online at your own pace—from non-coding essentials to data science and machine learning.
+                                KhmerHope is website for Hight school to find a good major in university.
                             </p>
                         </div>
                         

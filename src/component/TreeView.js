@@ -34,14 +34,31 @@ export default function Treeview() {
             defaultExpandIcon={<ChevronRightIcon />}
             >
             <TreeItem nodeId="1" label="Major">
-                <TreeItem nodeId="2" label="Calendar" />
-                <TreeItem nodeId="3" label="Chrome" />
-                <TreeItem nodeId="4" label="Webstorm" />
+                <TreeItem nodeId="1.1" label="Engineeing" >
+                  <TreeItem nodeId="2" label="Calendar" />
+                  <TreeItem nodeId="3" label="Chrome" />
+                  <TreeItem nodeId="4" label="Webstorm" />
+                </TreeItem>
+                <TreeItem nodeId="1.2" label="Science" >
+                  <TreeItem nodeId="2" label="Calendar" />
+                  <TreeItem nodeId="3" label="Chrome" />
+                  <TreeItem nodeId="4" label="Webstorm" />
+                </TreeItem>
+                <TreeItem nodeId="1.3" label="Health" >
+                  <TreeItem nodeId="2" label="Calendar" />
+                  <TreeItem nodeId="3" label="Chrome" />
+                  <TreeItem nodeId="4" label="Webstorm" />
+                </TreeItem>
+                <TreeItem nodeId="1.4" label="Language" >
+                  <TreeItem nodeId="2" label="Calendar" />
+                  <TreeItem nodeId="3" label="Chrome" />
+                  <TreeItem nodeId="4" label="Webstorm" />
+                </TreeItem>
             </TreeItem>
             <TreeItem nodeId="5" label="University">
-            <TreeItem nodeId="2" label="Calendar" />
-                <TreeItem nodeId="3" label="Chrome" />
-                <TreeItem nodeId="4" label="Webstorm" />
+                <TreeItem nodeId="2" label="Rupp" />
+                <TreeItem nodeId="3" label="Norton" />
+                <TreeItem nodeId="4" label="ITC" />
             </TreeItem>
             </TreeView>
     </div>

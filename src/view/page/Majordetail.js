@@ -5,9 +5,12 @@ import Navbar from "../../component/Navbar";
 import Treeview from "../../component/TreeView";
 import Footer from "../../component/Footer";
 import HomepageNavbar from "../../component/HomepageNavbar";
+import Mdetail from "../../component/Mdetail";
+import FooterStyle from "../../component/FooterStyle";
 
 const useStyles = makeStyles((theme) => ({
-  right: {
+  
+  left:{
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
@@ -19,15 +22,17 @@ const MajorDetail = () => {
   return (
     <div style={{backgroundColor:"rgb(225,225,225)"}}>
       <HomepageNavbar></HomepageNavbar>
+      
       <Grid container>
-        <Grid item sm={2} xs={0}>
+        <Grid item sm={2} xs={0} className={classes.left}>
           <Treeview></Treeview>
         </Grid>
         <Grid item sm={10} xs={12}>
-          <Feed />
+          <Mdetail></Mdetail>
         </Grid>
-            <Footer></Footer>
       </Grid>
+      <FooterStyle></FooterStyle>
+      <Footer></Footer>
     </div>
   );
 };
