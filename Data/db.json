@@ -1,0 +1,40 @@
+{
+    "University":[
+        {
+            "ID":1,
+            "Title":"Royal University of phnom penh",
+            "Detail":"...",
+            "Location":"Phnom penh , Cambodia",
+            "Type":["Science","Socail Science","Engineering"]
+        },
+        {
+            "ID":1,
+            "Title":"Royal University of phnom penh",
+            "Detail":"...",
+            "Location":"Phnom penh , Cambodia",
+            "Type":["Science","Socail Science","Engineering"]
+        },
+        {
+            "ID":1,
+            "Title":"Royal University of phnom penh",
+            "Detail":"...",
+            "Location":"Phnom penh , Cambodia",
+            "Type":["Science","Socail Science","Engineering"]
+        },
+        {
+            "ID":1,
+            "Title":"Royal University of phnom penh",
+            "Detail":"...",
+            "Location":"Phnom penh , Cambodia",
+            "Type":["Science","Socail Science","Engineering"]
+        },
+        {
+            "ID":1,
+            "Title":"Royal University of phnom penh",
+            "Detail":"...",
+            "Location":"Phnom penh , Cambodia",
+            "Type":["Science","Socail Science","Engineering"]
+        }
+        
+    ]
+}

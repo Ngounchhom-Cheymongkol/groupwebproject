@@ -15,6 +15,7 @@ import {
   } from "@material-ui/core";
   import { Cancel, Mail, Notifications, Search,MenuBookOutlined, MenuRounded } from "@material-ui/icons";
   import { useState } from "react";
+import { Link } from 'react-router-dom';
   
   const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -144,37 +145,38 @@ import {
                 KhmerHope
                 <Cancel onClick={handleClose}></Cancel>
                 </Typography>
-                    <Button className={classes.Sitem}>
+                
+                    <Button className={classes.Sitem} href="/">
                         Home
                     </Button>
-                    <Button className={classes.Sitem}>
+                    <Button className={classes.Sitem} href="/Major">
                         Major
                     </Button>
-                    <Button className={classes.Sitem}>
+                    <Button className={classes.Sitem} href="/University">
                         University
                     </Button>
-                    <Button className={classes.Sitem}>
+                    <Button className={classes.Sitem} href="/About">
                         About
                     </Button>
-                    <Button className={classes.Sitem}>
+                    <Button className={classes.Sitem} href="/Feedback">
                         Feedback
                     </Button>
                 </Box>
             </Modal>
           <div className={classes.BtnGroup}>
-              <Button className={classes.item}>
+              <Button className={classes.item} href="/">
                   Home
               </Button>
-              <Button className={classes.item}>
+              <Button className={classes.item} href="/Major">
                   Major
               </Button>
-              <Button className={classes.item}>
+              <Button className={classes.item} href="/University">
                   University
               </Button>
-              <Button className={classes.item}>
+              <Button className={classes.item} href="/About">
                   About
               </Button>
-              <Button className={classes.item}>
+              <Button className={classes.item} href="/Feedback">
                   Feedback
               </Button>
           </div>
@@ -184,7 +186,13 @@ import {
             //    width:"100%"
             }}>
             <div className={classes.search}>
-                    <Search />
+                    {/* <a href="/Searchpage" style={{color:"white"}}>
+                    
+                    </a> */}
+                    <Link to={{
+                      pathname:"/Searchpage",
+                      Value:"Search"
+                    }}><Search/></Link>
                     <InputBase placeholder="Search..." className={classes.input} />
                     <Cancel className={classes.cancel} onClick={() => setOpen(false)} />
                 </div>

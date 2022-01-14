@@ -15,9 +15,9 @@ import {
       backgroundColor:"black"
     },
     media: {
-      height: 350,
+      height: 450,
       [theme.breakpoints.down("sm")]: {
-        height: 150,
+        height: 250,
       },
     },
   }));
@@ -34,10 +34,10 @@ import {
             <Typography gutterBottom variant="h5">
               {title}
             </Typography>
-            <Typography variant="body2">
+            {/* <Typography variant="body2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               consectetur earum est.
-            </Typography>
+            </Typography> */}
           </CardContent>
         </CardActionArea>
         

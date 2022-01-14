@@ -11,6 +11,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import UniversityDetail from './view/page/Universitydetail';
+import Aboutpage from './view/page/AboutPage';
+import Feedback from './view/page/Feedback';
 
 function App() {
   return (
@@ -27,11 +30,20 @@ function App() {
               <Route path="/University">
                 <Universitypage></Universitypage>
               </Route>
+              <Route path="/UniversityDetail">
+                <UniversityDetail></UniversityDetail>
+              </Route>
               <Route path="/MajorDetail">
                 <MajorDetail></MajorDetail>
               </Route>
               <Route path="/SearchPage">
                 <Searchpage></Searchpage>
+              </Route>
+              <Route path="/About">
+                <Aboutpage></Aboutpage>
+              </Route>
+              <Route path="/Feedback">
+                <Feedback></Feedback>
               </Route>
             </SW>
           </div>

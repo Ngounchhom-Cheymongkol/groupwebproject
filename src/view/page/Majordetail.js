@@ -20,15 +20,15 @@ const useStyles = makeStyles((theme) => ({
 const MajorDetail = () => {
   const classes = useStyles();
   return (
-    <div style={{backgroundColor:"rgb(225,225,225)"}}>
+    <div style={{backgroundColor:"white"}}>
       <HomepageNavbar></HomepageNavbar>
-      
       <Grid container>
-        <Grid item sm={2} xs={0} className={classes.left}>
-          <Treeview></Treeview>
+        <Grid item sm={1} xs={0}>
         </Grid>
         <Grid item sm={10} xs={12}>
           <Mdetail></Mdetail>
+        </Grid>
+        <Grid item sm={1} xs={0}>
         </Grid>
       </Grid>
       <FooterStyle></FooterStyle>

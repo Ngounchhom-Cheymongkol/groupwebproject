@@ -5,7 +5,20 @@ import Feed from "../../component/Feed"
 import FacultyCard from '../../component/FacultyCard';
 import FooterStyle from '../../component/FooterStyle';
 import Carousell from '../../component/Carousal';
+const useStyle=makeStyles((theme)=>({
+    MajorList:{
+        margin:"50px",
+        marginTop:"0",
+        padding:"25px",
+        [theme.breakpoints.down("sm")]:{
+            margin:"0px",
+            padding:"10px",
+        }
+    }
+}));
+
 const Homepage=()=>{
+    const classes=useStyle();
     return(
        <div>
             <div style={{background:"#05192d"}}>
@@ -14,13 +27,13 @@ const Homepage=()=>{
                     padding:"50px",
                     paddingTop:"100px",
                 }}>
-                    <Grid item sm={2} xs={0}>
+                    <Grid item sm={1} xs={0}>
                         
                     </Grid>
-                    <Grid item sm={8} xs={12}>
+                    <Grid item sm={10} xs={12}>
                        <Carousell></Carousell>
                     </Grid>
-                    <Grid item sm={2} xs={0}> 
+                    <Grid item sm={1} xs={0}> 
                     </Grid>
                    
                 </Grid>
@@ -59,24 +72,18 @@ const Homepage=()=>{
             </div>
 
             <Grid container style={{
-                marginTop:"30px"
             }}>
-                <Grid item sm={4} style={{padding:"15px"}}>
-                        <FacultyCard>
-                        </FacultyCard>
-                </Grid>
-                <Grid item sm={4} style={{padding:"15px"}}>
-                        <FacultyCard>
-                            </FacultyCard>
-                </Grid>
-                <Grid item sm={4} style={{padding:"15px"}}>
-                        <FacultyCard>
-                            </FacultyCard>
-                </Grid>
+                
             </Grid>
 
-            <h1>Major</h1>
-            <Feed></Feed>
+                <Paper className={classes.MajorList}>
+                    <h1 style={{
+                            marginLeft:"15%"
+                        }}>
+                            - Top Major
+                    </h1>
+                    <Feed></Feed>
+                </Paper>
 
 
             {/* Design Footer  */}
