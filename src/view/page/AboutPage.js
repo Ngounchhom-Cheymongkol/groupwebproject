@@ -26,7 +26,7 @@ const Aboutpage = () => {
                 }}>
                         {/* Major Title */}
                     <h1   style={{
-                            marginTop:"50px",
+                            
                             color:"#05192d",
                             width:"100%",
                             textAlign:"center"

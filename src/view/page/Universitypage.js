@@ -1,11 +1,8 @@
 import { Grid, makeStyles } from "@material-ui/core";
-import Feed from "../../component/Feed";
 import Footer from "../../component/Footer";
 import FooterStyle from "../../component/FooterStyle";
 import HomepageNavbar from "../../component/HomepageNavbar";
-import Leftbar from "../../component/Leftbar";
-import Navbar from "../../component/Navbar";
-import UCard from "../../component/UCard"
+import UCard from "../../component/University/UCard"
 const useStyles = makeStyles((theme) => ({
   right: {
     [theme.breakpoints.down("sm")]: {

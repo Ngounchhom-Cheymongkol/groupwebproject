@@ -15,7 +15,7 @@ import {
       backgroundColor:"black"
     },
     media: {
-      height: 450,
+      height: 550,
       [theme.breakpoints.down("sm")]: {
         height: 250,
       },

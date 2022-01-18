@@ -2,7 +2,7 @@ import { Grid } from "@material-ui/core";
 import Footer from "../../component/Footer";
 import FooterStyle from "../../component/FooterStyle";
 import HomepageNavbar from "../../component/HomepageNavbar";
-import Ucard from "../../component/UCard";
+import Ucard from "../../component/University/UCard";
 
 const Feedback=()=>{
     return(

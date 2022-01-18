@@ -1,7 +1,5 @@
 import { Container, makeStyles,Grid, Paper } from "@material-ui/core";
-import Post from "./Post";
-import Footer from "./Footer"
-import Imagelist from "./ImageList";
+import Imagelist from "../ImageList";
 import { Facebook, Web, YouTube } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
   container: {

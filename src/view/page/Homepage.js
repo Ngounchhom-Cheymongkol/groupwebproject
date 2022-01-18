@@ -2,9 +2,8 @@ import HomepageNavbar from '../../component/HomepageNavbar';
 import { Grid, makeStyles, Paper, Typography } from "@material-ui/core";
 import Footer from "../../component/Footer"
 import Feed from "../../component/Feed"
-import FacultyCard from '../../component/FacultyCard';
 import FooterStyle from '../../component/FooterStyle';
-import Carousell from '../../component/Carousal';
+import Carousell from '../../component/Home/Carousal';
 const useStyle=makeStyles((theme)=>({
     MajorList:{
         margin:"50px",
@@ -24,16 +23,11 @@ const Homepage=()=>{
             <div style={{background:"#05192d"}}>
                 <HomepageNavbar></HomepageNavbar>
                 <Grid container style={{
-                    padding:"50px",
+                    
                     paddingTop:"100px",
                 }}>
-                    <Grid item sm={1} xs={0}>
-                        
-                    </Grid>
-                    <Grid item sm={10} xs={12}>
+                    <Grid item sm={12} xs={12}>
                        <Carousell></Carousell>
-                    </Grid>
-                    <Grid item sm={1} xs={0}> 
                     </Grid>
                    
                 </Grid>

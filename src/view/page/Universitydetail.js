@@ -1,13 +1,8 @@
 import { Grid, makeStyles } from "@material-ui/core";
-import Feed from "../../component/Feed";
-import Leftbar from "../../component/Leftbar";
-import Navbar from "../../component/Navbar";
-import Treeview from "../../component/TreeView";
 import Footer from "../../component/Footer";
 import HomepageNavbar from "../../component/HomepageNavbar";
-import Mdetail from "../../component/Mdetail";
 import FooterStyle from "../../component/FooterStyle";
-import UDetail from "../../component/UDetail";
+import UDetail from "../../component/University/UDetail";
 
 const useStyles = makeStyles((theme) => ({
   

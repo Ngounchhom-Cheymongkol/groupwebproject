@@ -21,6 +21,16 @@ function Carousell(props) {
             description: 'Math Student',
             ImageItem:"https://tcop.touro.edu/media/schools-and-colleges/tourocop/images/stories/IMG_3517.JPG"
         },
+        {
+            ItemTitle: 'Economic',
+            description: 'Math Student',
+            ImageItem:"https://www.conncoll.edu/media/major-images/Economics.jpg"
+        },
+        {
+            ItemTitle: 'Electrical Engineering',
+            description: 'Math Student',
+            ImageItem:"https://uwaterloo.ca/future-students/sites/ca.future-students/files/uploads/images/electrical_engineering_kenneth_mai_kamil_wozinski_and_arshan_khanifar_90-1.jpg"
+        },
     ];
 
     return (

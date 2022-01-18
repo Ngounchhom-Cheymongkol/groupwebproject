@@ -191,7 +191,10 @@ import { Link } from 'react-router-dom';
                     </a> */}
                     <Link to={{
                       pathname:"/Searchpage",
-                      Value:"Search"
+                      data:{
+                        Name:"khmer",
+                        Gender:"Male"
+                      }
                     }}><Search/></Link>
                     <InputBase placeholder="Search..." className={classes.input} />
                     <Cancel className={classes.cancel} onClick={() => setOpen(false)} />
