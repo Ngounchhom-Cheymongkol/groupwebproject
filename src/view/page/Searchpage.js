@@ -20,20 +20,12 @@ class MyComponent extends Component {
                          
                          <Grid item sm={12} xs={12}>
                            <GroupedSelect></GroupedSelect>
-                           <h1
-                        style={{
-                            color:"white",
-                            width:"100%",
-                            textAlign:"center",
-                            backgrouncdColor:"blue"
-                        }}>
-                            List of Major{data}
-                        </h1>
+                          
                          </Grid>
                      </Grid>
                      <Grid container style={{
                          padding:"50px",
-                         paddingTop:"100px",
+                         paddingTop:"0px",
                      }}>
                          <Grid item sm={2}>
                              

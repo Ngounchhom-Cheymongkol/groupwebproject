@@ -2,13 +2,32 @@ import { Grid, makeStyles } from "@material-ui/core";
 import Footer from "../../component/Footer";
 import FooterStyle from "../../component/FooterStyle";
 import HomepageNavbar from "../../component/HomepageNavbar";
+import Post from "../../component/Post";
 import UCard from "../../component/University/UCard"
+import UCard1 from "../../component/University/Ucard1";
+
+import img1 from "./../../Asset/University/img (1).jpg";
+import img2 from "./../../Asset/University/img (2).jpg";
+import img3 from "./../../Asset/University/img (3).jpg";
+import img4 from "./../../Asset/University/img (4).jpg";
+import img5 from "./../../Asset/University/img (5).jpg";
+
+
 const useStyles = makeStyles((theme) => ({
   right: {
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
   },
+  Feed:{
+    display:"flex",
+    flexDirection:"row",
+    flexWrap:"wrap",
+    justifyContent:"center",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection:"row",
+    },
+  }
 }));
 const dataitem=[
   {
@@ -21,6 +40,29 @@ const dataitem=[
 ]
 
 const Universitypage = () => {
+    const Items=[
+              
+                    {
+                        title:"AUPP" ,
+                        img:img1
+                    },
+                    {
+                        title:"NPIC",
+                        img:img2
+                    },
+                    {
+                        title:"RUPP",
+                        img:img3
+                    },
+                    {
+                        title:"UHS",
+                        img:img4
+                    },
+                    {
+                        title:"Norton",
+                        img:img5
+                    }
+                ]
   const classes = useStyles();
   return (
     <div>
@@ -94,14 +136,13 @@ const Universitypage = () => {
                 }}>
         <Grid item sm={1} xs={0}>
         </Grid>
-        <Grid item sm={10} xs={12}>
-          <UCard Title={"Intitute Technology of Cambodia"} Type={"Engineering"} Location={"Phnom Penh ,Cambodia"} Detail={"The Institut de Technologie du Cambodge (ITC) is one of Cambodia's higher education institutions. ... It offers education and research programs in engineering."}></UCard>
-          <UCard Title={"Intitute Technology of Cambodia"} Type={"Engineering"} Location={"Phnom Penh ,Cambodia"} Detail={"The Institut de Technologie du Cambodge (ITC) is one of Cambodia's higher education institutions. ... It offers education and research programs in engineering."}></UCard>
-          <UCard Title={"Intitute Technology of Cambodia"} Type={"Engineering"} Location={"Phnom Penh ,Cambodia"} Detail={"The Institut de Technologie du Cambodge (ITC) is one of Cambodia's higher education institutions. ... It offers education and research programs in engineering."}></UCard>
-          <UCard Title={"Intitute Technology of Cambodia"} Type={"Engineering"} Location={"Phnom Penh ,Cambodia"} Detail={"The Institut de Technologie du Cambodge (ITC) is one of Cambodia's higher education institutions. ... It offers education and research programs in engineering."}></UCard>
-          <UCard Title={"Intitute Technology of Cambodia"} Type={"Engineering"} Location={"Phnom Penh ,Cambodia"} Detail={"The Institut de Technologie du Cambodge (ITC) is one of Cambodia's higher education institutions. ... It offers education and research programs in engineering."}></UCard>
-          <UCard Title={"Intitute Technology of Cambodia"} Type={"Engineering"} Location={"Phnom Penh ,Cambodia"} Detail={"The Institut de Technologie du Cambodge (ITC) is one of Cambodia's higher education institutions. ... It offers education and research programs in engineering."}></UCard>
-
+        <Grid item sm={10} xs={12} className={classes.Feed}>
+               {
+                 Items.map((item)=>(
+                   <Post img={item.img} title={item.title}></Post>
+                 ))
+               }
+                
         </Grid>
         <Grid item sm={1} xs={0}>
           

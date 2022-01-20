@@ -12,14 +12,30 @@ import {
   const useStyles = makeStyles((theme) => ({
     card: {
       marginBottom: theme.spacing(5),
-      backgroundColor:"black"
+      backgroundColor:"rgb(1,1,1,0)",
+      borderRadius:"0px",
     },
     media: {
-      height: 550,
+      height: 600,
       [theme.breakpoints.down("sm")]: {
-        height: 250,
+        height: 300,
       },
     },
+    title:{
+      width:"100%",
+      textAlign:"center",
+      [theme.breakpoints.down('sm')]:{
+        fontSize:"30px"
+      }
+    },
+    Description:{
+      width:"50%",
+      marginLeft:"25%",
+      marginRight:"25%",
+      [theme.breakpoints.down('sm')]:{
+        display:"none",
+      }
+    }
   }));
   
   const SlideCard = ({ img, title }) => {
@@ -27,18 +43,36 @@ import {
     return (
       <Card className={classes.card}>
         <CardActionArea>
-          <CardMedia className={classes.media} image={img} title="My Post" />
-          <CardContent style={{
-              backgroundColor:"rgb(255,255,255,0.25)",color:"white"
-          }}>
-            <Typography gutterBottom variant="h5">
-              {title}
-            </Typography>
-            {/* <Typography variant="body2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              consectetur earum est.
-            </Typography> */}
-          </CardContent>
+          <CardMedia className={classes.media} image={img} title="My Post"> 
+            <Typography gutterBottom variant="h5" 
+            style={{
+              color:"white",
+              width:"100%",
+              height:"100%",
+              backgroundColor:"rgb(0,0,0,0.25)",
+              paddingTop:"50px"
+            }}>
+                 <h1 className={classes.title}>{title}</h1>
+                 <p className={classes.Description}>
+                 Information technology (IT) is the use of any computers, storage, networking and other physical devices, infrastructure and processes to create, process, store, secure and exchange all forms of electronic data. ... The commercial use of IT encompasses both computer technology and telecommunications.
+                 </p>
+                 <div  style={{
+                   width:"100%",
+                   display:"flex",
+                   flexDirection:"row",
+                   justifyContent:"center"
+                 }}>
+                 <Button variant="contained" size="medium" color="primary" style={{
+                   width:"200px",
+                   marginLeft:"auto",
+                   marginRight:"auto"
+                 }}>
+                    Learn More
+                  </Button>
+                 </div>
+              </Typography>
+            </CardMedia>
+          
         </CardActionArea>
         
       </Card>

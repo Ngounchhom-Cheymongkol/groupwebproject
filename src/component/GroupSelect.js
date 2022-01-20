@@ -30,7 +30,22 @@ const useStyles = makeStyles((theme) => ({
 
 export default function GroupedSelect() {
   const classes = useStyles();
-
+  const Science=[
+    "Math",
+    "Physic",
+    "Biology",
+    "Chemistry",
+  ]
+  const SocailScience=[
+    "Khmer Literature",
+    "Geography", 
+    "History",
+    "Earth Science"
+  ]
+  const Language=[
+    "English",
+    "Franch"
+  ]
   return (
     <div>
       <Grid container className={classes.SearchForm}>
@@ -42,11 +57,15 @@ export default function GroupedSelect() {
                     <em>None</em>
                   </MenuItem>
                   <ListSubheader>Sciences</ListSubheader>
-                  <MenuItem value={1}>Option 1</MenuItem>
-                  <MenuItem value={2}>Option 2</MenuItem>
+                  {
+                    Science.map((item,id)=>(
+                      <MenuItem value={id+4}>{item}</MenuItem>
+                    ))
+                  }
                   <ListSubheader>Social Sciences</ListSubheader>
-                  <MenuItem value={3}>Option 3</MenuItem>
-                  <MenuItem value={4}>Option 4</MenuItem>
+                  {SocailScience.map((item,id)=>(
+                      <MenuItem value={id}>{item}</MenuItem>
+                    ))}
                 </Select>
               </FormControl>
           </div >
@@ -58,11 +77,15 @@ export default function GroupedSelect() {
                     <em>None</em>
                   </MenuItem>
                   <ListSubheader>Sciences</ListSubheader>
-                  <MenuItem value={1}>Option 1</MenuItem>
-                  <MenuItem value={2}>Option 2</MenuItem>
+                  {
+                    Science.map((item,id)=>(
+                      <MenuItem value={id+4}>{item}</MenuItem>
+                    ))
+                  }
                   <ListSubheader>Social Sciences</ListSubheader>
-                  <MenuItem value={3}>Option 3</MenuItem>
-                  <MenuItem value={4}>Option 4</MenuItem>
+                  {SocailScience.map((item,id)=>(
+                      <MenuItem value={id}>{item}</MenuItem>
+                    ))}
                 </Select>
               </FormControl>
           </div>
@@ -74,11 +97,15 @@ export default function GroupedSelect() {
                     <em>None</em>
                   </MenuItem>
                   <ListSubheader>Sciences</ListSubheader>
-                  <MenuItem value={1}>Option 1</MenuItem>
-                  <MenuItem value={2}>Option 2</MenuItem>
+                  {
+                    Science.map((item,id)=>(
+                      <MenuItem value={id+4}>{item}</MenuItem>
+                    ))
+                  }
                   <ListSubheader>Social Sciences</ListSubheader>
-                  <MenuItem value={3}>Option 3</MenuItem>
-                  <MenuItem value={4}>Option 4</MenuItem>
+                  {SocailScience.map((item,id)=>(
+                      <MenuItem value={id}>{item}</MenuItem>
+                    ))}
                 </Select>
               </FormControl>
           </div>

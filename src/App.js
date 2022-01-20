@@ -14,14 +14,14 @@ import {
 import UniversityDetail from './view/page/Universitydetail';
 import Aboutpage from './view/page/AboutPage';
 import Feedback from './view/page/Feedback';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
   return (
     <div>
+      <LanguageProvider>
         <Router>
-          <div>
-            <SW>
-              <Route exact path="/">
+              <Route exact path="/" >
                 <Homepage></Homepage>
               </Route>
               <Route path="/Major">
@@ -45,9 +45,11 @@ function App() {
               <Route path="/Feedback">
                 <Feedback></Feedback>
               </Route>
-            </SW>
-          </div>
+            
+          
         </Router>
+      </LanguageProvider>
+        
     </div>
   );
 }

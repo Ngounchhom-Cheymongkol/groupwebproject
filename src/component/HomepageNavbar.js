@@ -16,6 +16,8 @@ import {
   import { Cancel, Mail, Notifications, Search,MenuBookOutlined, MenuRounded } from "@material-ui/icons";
   import { useState } from "react";
 import { Link } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
+import Translation from '../locales/Translation'
   
   const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -97,6 +99,7 @@ import { Link } from 'react-router-dom';
     item: {
         color:"white",
         display: "flex",
+        fontFamily:"'Kantumruy', sans-serif",
         [theme.breakpoints.up("sm")]: {
           cursor: "pointer",
         },
@@ -107,7 +110,8 @@ import { Link } from 'react-router-dom';
       },
       Sitem:{
         color:"white",
-        marginTop:"30px"
+        marginTop:"30px",
+        fontFamily:"'Kantumruy', sans-serif"
       }
   }));
   const style = {
@@ -129,7 +133,7 @@ import { Link } from 'react-router-dom';
       <AppBar position="fixed" style={{backgroundColor:"#05192d"}}>
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" className={classes.logoLg}>
-            KhmerHope
+            CCI
           </Typography>
           <Button className={classes.BtnMenu} onClick={handleOpen}>
               <MenuRounded></MenuRounded>
@@ -142,42 +146,42 @@ import { Link } from 'react-router-dom';
                 >
                 <Box sx={style}>
                 <Typography className={classes.logoSm}>
-                KhmerHope
+                CCI
                 <Cancel onClick={handleClose}></Cancel>
                 </Typography>
                 
                     <Button className={classes.Sitem} href="/">
-                        Home
+                        <Translation transKey={"nav_home"}/>
                     </Button>
                     <Button className={classes.Sitem} href="/Major">
-                        Major
+                      <Translation transKey="nav_major"></Translation>
                     </Button>
                     <Button className={classes.Sitem} href="/University">
-                        University
+                      <Translation transKey="nav_university"></Translation>
                     </Button>
                     <Button className={classes.Sitem} href="/About">
-                        About
+                      <Translation transKey="nav_about"></Translation>
                     </Button>
                     <Button className={classes.Sitem} href="/Feedback">
-                        Feedback
+                      <Translation transKey="nav_feedback"></Translation>
                     </Button>
                 </Box>
             </Modal>
           <div className={classes.BtnGroup}>
               <Button className={classes.item} href="/">
-                  Home
+                <Translation transKey="nav_home"></Translation>
               </Button>
               <Button className={classes.item} href="/Major">
-                  Major
+                <Translation transKey="nav_major"></Translation>
               </Button>
               <Button className={classes.item} href="/University">
-                  University
+                <Translation transKey="nav_university"></Translation>
               </Button>
               <Button className={classes.item} href="/About">
-                  About
+                <Translation transKey="nav_about"></Translation>
               </Button>
               <Button className={classes.item} href="/Feedback">
-                  Feedback
+                <Translation transKey="nav_feedback"></Translation>
               </Button>
           </div>
            <div style={{
@@ -206,8 +210,7 @@ import { Link } from 'react-router-dom';
                     />
                 </div>
                 <div className={classes.language}>
-                    <Button className={classes.Btnitem}>ENG</Button>|
-                    <Button className={classes.Btnitem}>ខ្មែរ</Button>
+                    <LanguageSwitcher></LanguageSwitcher>
                 </div>
            </div>
         </Toolbar>
