@@ -1,12 +1,12 @@
 import React, { useState, createContext } from 'react';
 
 export const LanguageContext = createContext({
-    curLang: 'kh',
+    curLang: 'en',
     setLang: lang => {}
 })
 
 export const LanguageProvider = ({children}) => {
-    const [curLang, setLang] = useState('kh');
+    const [curLang, setLang] = useState('en');
 
     return(
         <LanguageContext.Provider value={ {curLang, setLang} }>

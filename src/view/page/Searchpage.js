@@ -1,14 +1,13 @@
-import HomepageNavbar from '../../component/HomepageNavbar';
+import HomepageNavbar from "../../component/Search/HomepageNavbar";
 import { Grid, makeStyles, Paper } from "@material-ui/core";
 import GroupedSelect from '../../component/GroupSelect'
 import Footer from '../../component/Footer'
-import React, { Component } from 'react';
 import { Feed } from '@mui/icons-material';
-
-class MyComponent extends Component {
-  render() {
-    const { data } = this.props; 
-    console.log(data)
+import { SearchContext } from '../../contexts/SearchContext';
+import { useContext } from 'react';
+  
+ const Searchpage=()=> {
+    const {SearchVar,setSearchVar}=useContext(SearchContext);
     return (
       <div>
           <div style={{background:"#05192d"}}>
@@ -20,8 +19,9 @@ class MyComponent extends Component {
                          
                          <Grid item sm={12} xs={12}>
                            <GroupedSelect></GroupedSelect>
-                          
+                           <h1>{SearchVar}</h1>
                          </Grid>
+
                      </Grid>
                      <Grid container style={{
                          padding:"50px",
@@ -75,7 +75,6 @@ class MyComponent extends Component {
                  
       </div>
     );
-  }
-}
+  };
 
-export default MyComponent;
+export default Searchpage;

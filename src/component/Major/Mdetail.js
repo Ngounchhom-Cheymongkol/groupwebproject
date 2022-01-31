@@ -6,7 +6,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Mdetail = () => {
+const Mdetail = (props) => {
+    console.log("about",props)
+    alert("KIngdom of cambodai ")
   const classes = useStyles();
   return (
    
@@ -26,7 +28,7 @@ const Mdetail = () => {
                             margin:"50px",
                             color:"#05192d"
                         }}>
-                            - Civil Engineering
+                            {props.state}
                     </h1>
                             {/* Major image */}
                     <Paper style={{padding:"5%"}} >
@@ -71,7 +73,7 @@ const Mdetail = () => {
                         </h1>
                         
                         <ul>
-                            <li>Horizontal construction engineer. ...</li>
+                            <li>Horizontal construction engineer....</li>
                             <li>Commissioning engineer. ..</li>
                             <li>Civil engineer. ...</li>
                             <li>Project engineer. ...</li>

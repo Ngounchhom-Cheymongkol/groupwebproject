@@ -1,12 +1,45 @@
 {
-    "University":[
+    "Major":[
         {
             "ID":1,
-            "Title":"Royal University of phnom penh",
-            "Detail":"...",
-            "Location":"Phnom penh , Cambodia",
-            "Type":["Science","Socail Science","Engineering"]
+            "Name":"Information technology",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP","IU"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"What major is",
+            "Price":["600$ up per year"],
+	        "Job Salary":["500$ up per month "],
+            "Job":["Web Developer","Application Developer","UI/UX designer","Cloud Computing Engineer","Computer Network Specialist","Database Administrator","Information Security Specialist","Information Technology Leadership","Information Technology Analyst", "Computer Support Specialist"],
+            "Subject":["...","..."],
+            "img":"URL"
         },
+        {
+            "ID":2,
+            "Name":"Information technology",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP","IU"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"What major is",
+            "Price":["600$ up per year"],
+	        "Job Salary":["500$ up per month "],
+            "Job":["Web Developer","Application Developer","UI/UX designer","Cloud Computing Engineer","Computer Network Specialist","Database Administrator","Information Security Specialist","Information Technology Leadership","Information Technology Analyst", "Computer Support Specialist"],
+            "Subject":["...","..."],
+            "img":"URL"
+        },
+        {
+            "ID":3,
+            "Name":"Information technology",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP","IU"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"What major is",
+            "Price":["600$ up per year"],
+	        "Job Salary":["500$ up per month "],
+            "Job":["Web Developer","Application Developer","UI/UX designer","Cloud Computing Engineer","Computer Network Specialist","Database Administrator","Information Security Specialist","Information Technology Leadership","Information Technology Analyst", "Computer Support Specialist"],
+            "Subject":["...","..."],
+            "img":"URL"
+        }
+
+    ],
+    "University":[
+        
         {
             "ID":1,
             "Title":"Royal University of phnom penh",

@@ -137,9 +137,9 @@ const Homepage=()=>{
                                 justifyContent:"center",
                                 color:"white"
                             }}>
-                                <h1>What is KhmerHope?</h1>
+                                <h1>What is CCI?</h1>
                             <p>
-                                KhmerHope is website for Hight school to find a good major in university.
+                                CCI stand for Cambodia College, is a website for Hight shcool student, is a website for hight school students that are just graduate could be able to consider the right major in university.
                             </p>
                         </div>
                         

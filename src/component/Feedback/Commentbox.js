@@ -12,8 +12,7 @@ import {
   const useStyles = makeStyles((theme) => ({
     card: {
       marginBottom: theme.spacing(5),
-      width:"400px",
-      margin:"20px"
+      height:"400"
     },
     media: {
       height: 250,
@@ -23,30 +22,37 @@ import {
     },
   }));
   
-  const Post = ({ img, title }) => {
+  const Commentbox = ({ img, title }) => {
     const classes = useStyles();
     return (
       <Card className={classes.card}>
         <CardActionArea>
-          <CardMedia className={classes.media} image={img} title="My Post" />
           <CardContent>
-            <Typography gutterBottom variant="h5">
-              {title}
+            <Typography gutterBottom variant="h4" style={{
+              width:"100%",
+              textAlign:"center"          }}
+              >
+              Can do you ask something
             </Typography>
-            <Typography variant="body2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              consectetur earum est.
+            <Typography variant="body1"  style={{
+              width:"100%",
+              textAlign:"center"          }}
+              >
+              let us know what we're getting right and what we can improve.
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary"  href="/UniversityDetail">
-            Learn More
+          <Button variant="contained" size="medium" color="primary" style={{
+              width:"50%",
+              marginLeft:"25%",
+          }}>
+            Comment
           </Button>
         </CardActions>
       </Card>
     );
   };
   
-  export default Post;
+  export default Commentbox;
   

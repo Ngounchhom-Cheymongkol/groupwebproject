@@ -3,7 +3,7 @@ import { Grid, makeStyles, Paper } from "@material-ui/core";
 import Footer from "../../component/Footer"
 import Feed from "../../component/Feed"
 import FooterStyle from '../../component/FooterStyle';
-import UCard1 from "../../component/University/Ucard1";
+import UCard1 from "../../component/Major/Ucard1";
 import logo1 from './../../Asset/Image/img (1).jpg'
 import logo2 from './../../Asset/Image/img (2).jpg'
 import logo3 from './../../Asset/Image/img (3).jpg'

@@ -3,7 +3,8 @@ import Footer from "../../component/Footer";
 import FooterStyle from "../../component/FooterStyle";
 import HomepageNavbar from "../../component/HomepageNavbar";
 import Ucard from "../../component/University/UCard";
-
+import Commentbox from '../../component/Feedback/Commentbox'
+import Ratebox from "../../component/Feedback/Ratebxo";
 const Feedback=()=>{
     return(
         <div>
@@ -21,8 +22,8 @@ const Feedback=()=>{
                             FEEDBACK
                     </h1>
                 <Grid container>
-                    <Grid item sm={1} xs={0}></Grid><Grid item sm={4} xs={12}> <Ucard></Ucard> </Grid><Grid item sm={2} xs={0}></Grid><Grid item sm={4} xs={0}></Grid><Grid item sm={1} xs={0}></Grid>
-                    <Grid item sm={1} xs={0}></Grid><Grid item sm={4} xs={0}></Grid><Grid item sm={2} xs={0}></Grid><Grid item sm={4} xs={12}> <Ucard></Ucard> </Grid><Grid item sm={1} xs={0}></Grid>
+                    <Grid item sm={1} xs={0}></Grid><Grid item sm={4} xs={12}> <Commentbox></Commentbox> </Grid><Grid item sm={2} xs={0}></Grid><Grid item sm={4} xs={0}></Grid><Grid item sm={1} xs={0}></Grid>
+                    <Grid item sm={1} xs={0}></Grid><Grid item sm={4} xs={0}></Grid><Grid item sm={2} xs={0}></Grid><Grid item sm={4} xs={12}> <Commentbox></Commentbox> </Grid><Grid item sm={1} xs={0}></Grid>
                 </Grid>
             </div>
             <FooterStyle>

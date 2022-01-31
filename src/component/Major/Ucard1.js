@@ -8,6 +8,7 @@ import {
     makeStyles,
     Typography,
   } from "@material-ui/core";
+import { Link } from "react-router-dom";
   
   const useStyles = makeStyles((theme) => ({
     card: {
@@ -66,13 +67,23 @@ import {
                    flexDirection:"row",
                    justifyContent:"center"
                  }}>
+                 <Link
+                 to={
+                   {pathname:"/MajorDetail",
+                    state:{
+                      name:"KIngdom of Cambodia"
+                    }
+                  }
+                 }
+                 >
                  <Button variant="contained" size="medium" color="primary" style={{
                    width:"200px",
                    marginLeft:"auto",
                    marginRight:"auto",
-                 }}>
+                 }} >
                     Learn More
                   </Button>
+                 </Link>
                  </div>
               </Typography>
             </CardMedia>

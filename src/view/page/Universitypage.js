@@ -3,8 +3,6 @@ import Footer from "../../component/Footer";
 import FooterStyle from "../../component/FooterStyle";
 import HomepageNavbar from "../../component/HomepageNavbar";
 import Post from "../../component/Post";
-import UCard from "../../component/University/UCard"
-import UCard1 from "../../component/University/Ucard1";
 
 import img1 from "./../../Asset/University/img (1).jpg";
 import img2 from "./../../Asset/University/img (2).jpg";

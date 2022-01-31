@@ -14,13 +14,14 @@ import {
 import UniversityDetail from './view/page/Universitydetail';
 import Aboutpage from './view/page/AboutPage';
 import Feedback from './view/page/Feedback';
+import { SearchProvider } from './contexts/SearchContext';
 import { LanguageProvider } from './contexts/LanguageContext';
-
+import { useEffect } from 'react';
 function App() {
   return (
     <div>
       <LanguageProvider>
-        <Router>
+          <Router>
               <Route exact path="/" >
                 <Homepage></Homepage>
               </Route>
@@ -37,7 +38,9 @@ function App() {
                 <MajorDetail></MajorDetail>
               </Route>
               <Route path="/SearchPage">
-                <Searchpage></Searchpage>
+                <SearchProvider>
+                  <Searchpage></Searchpage>
+                </SearchProvider>
               </Route>
               <Route path="/About">
                 <Aboutpage></Aboutpage>
@@ -45,13 +48,9 @@ function App() {
               <Route path="/Feedback">
                 <Feedback></Feedback>
               </Route>
-            
-          
         </Router>
       </LanguageProvider>
-        
     </div>
   );
 }
-
 export default App;

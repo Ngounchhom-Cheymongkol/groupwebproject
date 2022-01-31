@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SearchContext } from '../contexts/SearchContext';
+import { SearchContext } from '../../contexts/SearchContext';
 import { useContext } from 'react';
 import {
     alpha,
@@ -17,8 +17,8 @@ import {
   import { Cancel, Mail, Notifications, Search,MenuBookOutlined, MenuRounded } from "@material-ui/icons";
   import { useState } from "react";
 import { Link } from 'react-router-dom';
-import LanguageSwitcher from './LanguageSwitcher';
-import Translation from '../locales/Translation'
+import LanguageSwitcher from './../LanguageSwitcher';
+import Translation from '../../locales/Translation';
   
   const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -127,14 +127,14 @@ import Translation from '../locales/Translation'
   };
     const HomepageNavbar = () => {
     const {SearchVar,setSearchVar}=useContext(SearchContext);
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     const [menuopen, setMenuopen] = React.useState(false);
     const handleOpen = () => setMenuopen(true);
     const handleClose = () => setMenuopen(false);
     const classes = useStyles({ open });
     const {Sdata,setSdata}=useState();
-    const Click=()=>{
-      alert(document.getElementById("Sdata").value)
+    const SetData=()=>{
+      setSearchVar(document.getElementById('Sdata').value)
     }
     return (
       <AppBar position="fixed" style={{backgroundColor:"#05192d"}}>
@@ -196,11 +196,21 @@ import Translation from '../locales/Translation'
                flexDirection:"row",
             //    width:"100%"
             }}>
-                <Button className={classes.icons } href="/Searchpage">
+            <div className={classes.search}>
+                    {/* <a href="/Searchpage" style={{color:"white"}}> 
+                    </a> */}
+                    <Button variant='text' onClick={SetData} >
+                    <Search/>
+                    </Button>
+                    <InputBase placeholder="Search..." className={classes.input} id='Sdata'/>
+                    <Cancel className={classes.cancel} onClick={() => setOpen(false)} />
+                </div>
+                <div className={classes.icons}>
                     <Search
                     className={classes.searchButton}
+                    onClick={() => setOpen(true)}
                     />
-                </Button>
+                </div>
                 <div className={classes.language}>
                     <LanguageSwitcher></LanguageSwitcher>
                 </div>
