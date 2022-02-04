@@ -5,68 +5,181 @@
             "Name":"Information technology",
             "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP","IU"],
             "SubjectRequire":["Math","Physic","English"],
-            "Description":"What major is",
+            "Description":"Information technology (IT) is the use of any computers, storage, networking and other physical devices, infrastructure and processes to create, process, store, secure and exchange all forms of electronic data. ... The commercial use of IT encompasses both computer technology and telecommunications.",
             "Price":["600$ up per year"],
 	        "Job Salary":["500$ up per month "],
             "Job":["Web Developer","Application Developer","UI/UX designer","Cloud Computing Engineer","Computer Network Specialist","Database Administrator","Information Security Specialist","Information Technology Leadership","Information Technology Analyst", "Computer Support Specialist"],
             "Subject":["...","..."],
-            "img":"URL"
+            "img":"https://drive.google.com/uc?export=view&id=1RPHckMypFzDXx1pe3P1AAmR34JVAiHVf"
         },
         {
             "ID":2,
-            "Name":"Information technology",
-            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP","IU"],
+            "Name":"Electrical",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP"],
             "SubjectRequire":["Math","Physic","English"],
-            "Description":"What major is",
-            "Price":["600$ up per year"],
-	        "Job Salary":["500$ up per month "],
-            "Job":["Web Developer","Application Developer","UI/UX designer","Cloud Computing Engineer","Computer Network Specialist","Database Administrator","Information Security Specialist","Information Technology Leadership","Information Technology Analyst", "Computer Support Specialist"],
+            "Description":"Electrical engineering is an engineering discipline concerned with the study, design, and application of equipment, devices, and systems which use electricity, electronics, and electromagnetism. It emerged as an identifiable occupation in the latter half of the 19th century after commercialization of the electric telegraph, the telephone, and electrical power generation, distribution, and use.Electrical engineering is now divided into a wide range of different fields, including computer engineering, systems engineering, power engineering, telecommunications, radio-frequency engineering, signal processing, instrumentation, photovoltaic cells, electronics, and optics and photonics. Many of these disciplines overlap with other engineering branches, spanning a huge number of specializations including hardware engineering, power electronics, electromagnetics and waves, microwave engineering, nanotechnology, electrochemistry, renewable energies, mechatronics/control, and electrical materials science.[a]",
+            "Job Salary":["200$ per month(minimum)","3600$ per month(maximum"],
+            "Job":["Blogger", "Aeronautical", "Aerospace", "Aircraft Performance"," Airline Pilot","Building Service"],
             "Subject":["...","..."],
-            "img":"URL"
+            "img":"https://drive.google.com/uc?export=view&id=1oWlhbYQiMFKRynBid0DLQpK4RuJpFyvK"
+
         },
         {
             "ID":3,
-            "Name":"Information technology",
-            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP","IU"],
-            "SubjectRequire":["Math","Physic","English"],
+            "Name":"Health Sciences",
+            "university":["Norton","UHS","IU"],
+            "SubjectRequire":["Math","Chemistry","Biology"],
             "Description":"What major is",
-            "Price":["600$ up per year"],
-	        "Job Salary":["500$ up per month "],
-            "Job":["Web Developer","Application Developer","UI/UX designer","Cloud Computing Engineer","Computer Network Specialist","Database Administrator","Information Security Specialist","Information Technology Leadership","Information Technology Analyst", "Computer Support Specialist"],
+            "Price":["6000$ per year"],
+            "Job":["Pharmacist","Dentist","Doctor","Physician","Healthcare Administrator", "Nurse"],
             "Subject":["...","..."],
-            "img":"URL"
-        }
+            "img":"https://www.slma.cc/wp-content/uploads/2018/01/SLMA_ProsPCP.jpg"
 
+        },
+        {
+            "ID":4,
+            "Name":"Architecture",
+            "university":["RUFA","SETEC","Paragon","PUC","ITC"],
+            "SubjectRequire":["Math","Drawing","English"],
+            "Description":"Architecture, the art and technique of designing and building, as distinguished from the skills associated with construction. The practice of architecture is employed to fulfill both practical and expressive requirements, and thus it serves both utilitarian and aesthetic ends.",
+            "Price":["500$ up per year"],
+            "Job":["Architect","Architectural Designer","Interior Designer","Project Architect"],
+            "Subject":["...","..."],
+            "img":"https://drive.google.com/uc?export=view&id=1TbEI-jGeIzAM9aCzmfur692ZpzBFsda2"
+
+
+        },
+        {
+            "ID":5,
+            "Name":"Business",
+            "university":["Setec", "Norton", "Paragon,AUPP"],
+            "SubjectRequire":["English","Math"],
+            "Description":"A business major is for students seeking a broad-based education in many areas of business, with the option to specialize. Students will learn how different types of companies function in local and global economies. With a business/commerce general major, students have broad career options. General management, business ownership and employment at a corporation are all viable career paths for those with a business background.",
+            "Price":["2000$up"],
+            "Job":["Accountant", "Management Consultant","Social Media Manager","Financial Analyst", "Actuary,Business Teacher","Corporate Attorney"],
+            "Subject":["...","..."],
+            "img":"https://www.evergladesuniversity.edu/wp-content/uploads/2021/03/What-is-the-Best-Business-Degree-to-Get-in-2021-2.jpg"
+
+
+        },
+        {
+            "ID":6,
+            "Name":"Civil Engineering",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.Civil engineering is traditionally broken into a number of sub-disciplines. It is considered the second-oldest engineering discipline after military engineering,[3] and it is defined to distinguish non-military engineering from military engineering.[4] Civil engineering can take place in the public sector from municipal public works departments through to federal government agencies, and in the private sector from locally based firms to global Fortune 500 companies.",
+            "Job Salary":["200$ per month(minimum)","3600$ per month(maximum"],
+            "Job":["Blogger", "Aeronautical", "Aerospace", "Aircraft Performance"," Airline Pilot","Building Service"],
+            "Subject":["...","..."],
+            "img":"https://unsplash.com/photos/x-ghf9LjrVg"
+        },
+        {
+            "ID":7,
+            "Name":"Civil Engineering",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.Civil engineering is traditionally broken into a number of sub-disciplines. It is considered the second-oldest engineering discipline after military engineering,[3] and it is defined to distinguish non-military engineering from military engineering.[4] Civil engineering can take place in the public sector from municipal public works departments through to federal government agencies, and in the private sector from locally based firms to global Fortune 500 companies.",
+            "Job Salary":["200$ per month(minimum)","3600$ per month(maximum"],
+            "Job":["Blogger", "Aeronautical", "Aerospace", "Aircraft Performance"," Airline Pilot","Building Service"],
+            "Subject":["...","..."],
+            "img":"https://unsplash.com/photos/x-ghf9LjrVg"
+        },
+        {
+            "ID":8,
+            "Name":"Civil Engineering",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.Civil engineering is traditionally broken into a number of sub-disciplines. It is considered the second-oldest engineering discipline after military engineering,[3] and it is defined to distinguish non-military engineering from military engineering.[4] Civil engineering can take place in the public sector from municipal public works departments through to federal government agencies, and in the private sector from locally based firms to global Fortune 500 companies.",
+            "Job Salary":["200$ per month(minimum)","3600$ per month(maximum"],
+            "Job":["Blogger", "Aeronautical", "Aerospace", "Aircraft Performance"," Airline Pilot","Building Service"],
+            "Subject":["...","..."],
+            "img":"https://unsplash.com/photos/x-ghf9LjrVg"
+        },
+        {
+            "ID":9,
+            "Name":"Civil Engineering",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.Civil engineering is traditionally broken into a number of sub-disciplines. It is considered the second-oldest engineering discipline after military engineering,[3] and it is defined to distinguish non-military engineering from military engineering.[4] Civil engineering can take place in the public sector from municipal public works departments through to federal government agencies, and in the private sector from locally based firms to global Fortune 500 companies.",
+            "Job Salary":["200$ per month(minimum)","3600$ per month(maximum"],
+            "Job":["Blogger", "Aeronautical", "Aerospace", "Aircraft Performance"," Airline Pilot","Building Service"],
+            "Subject":["...","..."],
+            "img":"https://unsplash.com/photos/x-ghf9LjrVg"
+        },
+        {
+            "ID":10,
+            "Name":"Civil Engineering",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.Civil engineering is traditionally broken into a number of sub-disciplines. It is considered the second-oldest engineering discipline after military engineering,[3] and it is defined to distinguish non-military engineering from military engineering.[4] Civil engineering can take place in the public sector from municipal public works departments through to federal government agencies, and in the private sector from locally based firms to global Fortune 500 companies.",
+            "Job Salary":["200$ per month(minimum)","3600$ per month(maximum"],
+            "Job":["Blogger", "Aeronautical", "Aerospace", "Aircraft Performance"," Airline Pilot","Building Service"],
+            "Subject":["...","..."],
+            "img":"https://unsplash.com/photos/x-ghf9LjrVg"
+        },
+        {
+            "ID":11,
+            "Name":"Civil Engineering",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.Civil engineering is traditionally broken into a number of sub-disciplines. It is considered the second-oldest engineering discipline after military engineering,[3] and it is defined to distinguish non-military engineering from military engineering.[4] Civil engineering can take place in the public sector from municipal public works departments through to federal government agencies, and in the private sector from locally based firms to global Fortune 500 companies.",
+            "Job Salary":["200$ per month(minimum)","3600$ per month(maximum"],
+            "Job":["Blogger", "Aeronautical", "Aerospace", "Aircraft Performance"," Airline Pilot","Building Service"],
+            "Subject":["...","..."],
+            "img":"https://unsplash.com/photos/x-ghf9LjrVg"
+        },
+        {
+            "ID":12,
+            "Name":"Civil Engineering",
+            "university":["RUPP","ITC","Norton","Setec","Paragon","UC","AUPP"],
+            "SubjectRequire":["Math","Physic","English"],
+            "Description":"Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.Civil engineering is traditionally broken into a number of sub-disciplines. It is considered the second-oldest engineering discipline after military engineering,[3] and it is defined to distinguish non-military engineering from military engineering.[4] Civil engineering can take place in the public sector from municipal public works departments through to federal government agencies, and in the private sector from locally based firms to global Fortune 500 companies.",
+            "Job Salary":["200$ per month(minimum)","3600$ per month(maximum"],
+            "Job":["Blogger", "Aeronautical", "Aerospace", "Aircraft Performance"," Airline Pilot","Building Service"],
+            "Subject":["...","..."],
+            "img":"https://unsplash.com/photos/x-ghf9LjrVg"
+        }
     ],
-    "University":[
-        
+    "University":[ 
         {
             "ID":1,
-            "Title":"Royal University of phnom penh",
+            "Title":"AUPP",
             "Detail":"...",
             "Location":"Phnom penh , Cambodia",
-            "Type":["Science","Socail Science","Engineering"]
+            "Type":["Science","Socail Science","Engineering"],
+            "image":"https://drive.google.com/uc?export=view&id=1jH7siC8fSP-ocOp-rYPVKbW9ghN0mRuY"
         },
         {
-            "ID":1,
-            "Title":"Royal University of phnom penh",
+            "ID":2,
+            "Title":"NPIC",
             "Detail":"...",
             "Location":"Phnom penh , Cambodia",
-            "Type":["Science","Socail Science","Engineering"]
+            "Type":["Science","Socail Science","Engineering"],
+            "image":"https://drive.google.com/uc?export=view&id=1cmjCc4bjqaaIKHtlvpueY1G0Psntpg8j"
         },
         {
-            "ID":1,
+            "ID":3,
             "Title":"Royal University of phnom penh",
             "Detail":"...",
             "Location":"Phnom penh , Cambodia",
-            "Type":["Science","Socail Science","Engineering"]
+            "Type":["Science","Socail Science","Engineering"],
+            "image":"https://drive.google.com/uc?export=view&id=19P7tmNCvaA05o87y3tG_Tbuosw1z8XNi"
         },
         {
-            "ID":1,
-            "Title":"Royal University of phnom penh",
+            "ID":4,
+            "Title":"UHS",
             "Detail":"...",
             "Location":"Phnom penh , Cambodia",
-            "Type":["Science","Socail Science","Engineering"]
+            "Type":["Science","Socail Science","Engineering"],
+            "image":"https://drive.google.com/uc?export=view&id=1zs7S-gmViesHZ1u2RbG3UvQiVoHUuiQ7"
+        },
+        {
+            "ID":5,
+            "Title":"Norton",
+            "Detail":"...",
+            "Location":"Phnom penh , Cambodia",
+            "Type":["Science","Socail Science","Engineering"],
+            "image":"https://drive.google.com/uc?export=view&id=1Jif7LvYT-R-q87jWnB-UAu0FmYU70ouf"
         }
         
     ]

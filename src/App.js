@@ -17,10 +17,12 @@ import Feedback from './view/page/Feedback';
 import { SearchProvider } from './contexts/SearchContext';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { useEffect } from 'react';
+import { UniversityProvider } from './contexts/UniversityData';
 function App() {
   return (
     <div>
       <LanguageProvider>
+        <UniversityProvider>
           <Router>
               <Route exact path="/" >
                 <Homepage></Homepage>
@@ -49,6 +51,8 @@ function App() {
                 <Feedback></Feedback>
               </Route>
         </Router>
+        </UniversityProvider>
+          
       </LanguageProvider>
     </div>
   );

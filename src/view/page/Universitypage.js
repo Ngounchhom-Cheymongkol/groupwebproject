@@ -3,13 +3,7 @@ import Footer from "../../component/Footer";
 import FooterStyle from "../../component/FooterStyle";
 import HomepageNavbar from "../../component/HomepageNavbar";
 import Post from "../../component/Post";
-
-import img1 from "./../../Asset/University/img (1).jpg";
-import img2 from "./../../Asset/University/img (2).jpg";
-import img3 from "./../../Asset/University/img (3).jpg";
-import img4 from "./../../Asset/University/img (4).jpg";
-import img5 from "./../../Asset/University/img (5).jpg";
-
+import { useEffect, useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
   right: {
@@ -28,39 +22,26 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 const dataitem=[
-  {
-    img:"",
-    Title:"ITC",
-    Type:"Engineering",
-    ULocation:"Phnom Penh, Cambodia",
-    Decrition:"Kigndom of cambodia nation religion king"
-  }
 ]
 
 const Universitypage = () => {
-    const Items=[
-              
-                    {
-                        title:"AUPP" ,
-                        img:img1
-                    },
-                    {
-                        title:"NPIC",
-                        img:img2
-                    },
-                    {
-                        title:"RUPP",
-                        img:img3
-                    },
-                    {
-                        title:"UHS",
-                        img:img4
-                    },
-                    {
-                        title:"Norton",
-                        img:img5
-                    }
-                ]
+  var i=0;
+  const [Items,setItems]=useState([]);
+    useEffect(()=>{
+     loadData();
+    },[])
+    const loadData =()=>{ 
+      fetch("http://localhost:5000/University", {
+        
+        // configuration
+     })
+     .then(response => response.json())
+     .then(data => {
+       setItems(data);
+         // do something with data
+     })
+    }
+  // alert(Items);
   const classes = useStyles();
   return (
     <div>
@@ -137,10 +118,9 @@ const Universitypage = () => {
         <Grid item sm={10} xs={12} className={classes.Feed}>
                {
                  Items.map((item)=>(
-                   <Post img={item.img} title={item.title}></Post>
+                   <Post data={item}></Post>
                  ))
                }
-                
         </Grid>
         <Grid item sm={1} xs={0}>
           

@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const UDetail = () => {
+const UDetail = ({data}) => {
   const classes = useStyles();
   return (
    
@@ -27,14 +27,14 @@ const UDetail = () => {
                             margin:"50px",
                             color:"#05192d"
                         }}>
-                            - Royal University of Phnom penh
+                            - {data.Title}
                     </h1>
                             {/* Major image */}
                     <Paper style={{padding:"5%"}}>
                                 <img style={{
                                     width:"100%",
                                     }} 
-                                        src="http://2.bp.blogspot.com/-w5IY3xzQEIg/UJVGOsrGupI/AAAAAAAAAFk/phzgNzMGeZE/s1600/rupp.jpg"
+                                        src={data.image}
                                 ></img>
                     </Paper>
                     {/* What is major? */}
@@ -46,10 +46,10 @@ const UDetail = () => {
                                          - Information
                         </h1>
                             <h4>
-                                - Location : Toul kok,Phnom penh, Cambodia 
+                                - {data.Location}
                             </h4>
                             <h4>
-                                - Type of University : Science ,Socail Science,Engineering,Education ,Language
+                                - Type of University : {data.Type}
                             </h4>
                             <h4>
                                 - Official website :

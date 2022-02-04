@@ -4,12 +4,7 @@ import Footer from "../../component/Footer"
 import Feed from "../../component/Feed"
 import FooterStyle from '../../component/FooterStyle';
 import UCard1 from "../../component/Major/Ucard1";
-import logo1 from './../../Asset/Image/img (1).jpg'
-import logo2 from './../../Asset/Image/img (2).jpg'
-import logo3 from './../../Asset/Image/img (3).jpg'
-import logo4 from './../../Asset/Image/img (4).jpg'
-import logo5 from './../../Asset/Image/img (5).jpg'
-import { InterpreterModeSharp } from '@mui/icons-material';
+import { useEffect, useState } from 'react';
 
 const useStyle=makeStyles((theme)=>({
     Feed:{
@@ -23,57 +18,68 @@ const useStyle=makeStyles((theme)=>({
     }
 }));
 const Majorpage=()=>{
-    const Items=[
-                    {
-                        title:"Civil Engineering",
-                        img:"https://allplan.asia/wp-content/uploads/2020/06/how-much-do-civil-engineer-make-1600x900.jpg"
-                    },
-                    {
-                        title:"Computer Science" ,
-                        img:"https://www.pba.edu/_resources/images/images_on_pages/computer-system.jpg"
-                    },
-                    {
-                        title:"Ecology" ,
-                        img:"https://eeb.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/EEB%20Custom2.jpg?itok=lmmFxCG1&timestamp=1576301524"
-                    },
-                    {
-                        title:"Biology Engineering" ,
-                        img:"https://www.studyinternational.com/wp-content/uploads/2020/06/shutterstock_691541056.jpg"
-                    },
-                    {
-                        title:"Health",
-                        img:"https://www.slma.cc/wp-content/uploads/2018/01/SLMA_ProsPCP.jpg"
-                    },
-                    {
-                        title:"Language" ,
-                        img:"https://s3e8p5g8.rocketcdn.me/wp-content/uploads/2018/11/english_major.jpg"
-                    },
-                    {
-                        title:"Electronic Engineering" ,
-                        img:logo1
-                    },
-                    {
-                        title:"Achitecture",
-                        img:logo2
-                    },
-                    {
-                        title:"Information Technology",
-                        img:logo3
-                    },
-                    {
-                        title:"Economic",
-                        img:logo4
-                    },
-                    {
-                        title:"Achitecture",
-                        img:logo5
-                    }
-                ]
-    const Item = ({title, img}) => {
-                    return (
-                    <UCard1 img={img} title={title}></UCard1>
-                    );
-                };
+    // const Items=[
+    //                 {
+    //                     title:"Civil Engineering",
+    //                     img:"https://allplan.asia/wp-content/uploads/2020/06/how-much-do-civil-engineer-make-1600x900.jpg"
+    //                 },
+    //                 {
+    //                     title:"Computer Science" ,
+    //                     img:"https://www.pba.edu/_resources/images/images_on_pages/computer-system.jpg"
+    //                 },
+    //                 {
+    //                     title:"Ecology" ,
+    //                     img:"https://eeb.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/EEB%20Custom2.jpg?itok=lmmFxCG1&timestamp=1576301524"
+    //                 },
+    //                 {
+    //                     title:"Biology Engineering" ,
+    //                     img:"https://www.studyinternational.com/wp-content/uploads/2020/06/shutterstock_691541056.jpg"
+    //                 },
+    //                 {
+    //                     title:"Health",
+    //                     img:"https://www.slma.cc/wp-content/uploads/2018/01/SLMA_ProsPCP.jpg"
+    //                 },
+    //                 {
+    //                     title:"Language" ,
+    //                     img:"https://s3e8p5g8.rocketcdn.me/wp-content/uploads/2018/11/english_major.jpg"
+    //                 },
+    //                 {
+    //                     title:"Electronic Engineering" ,
+    //                     img:logo1
+    //                 },
+    //                 {
+    //                     title:"Achitecture",
+    //                     img:logo2
+    //                 },
+    //                 {
+    //                     title:"Information Technology",
+    //                     img:logo3
+    //                 },
+    //                 {
+    //                     title:"Economic",
+    //                     img:logo4
+    //                 },
+    //                 {
+    //                     title:"Achitecture",
+    //                     img:logo5
+    //                 }
+    //             ]
+
+                const [Items,setItems]=useState([]);
+    useEffect(()=>{
+     loadData();
+    },[])
+    const loadData =()=>{ 
+      fetch("http://localhost:5000/Major", {
+        
+        // configuration
+     })
+     .then(response => response.json())
+     .then(data => {
+       setItems(data);
+         // do something with data
+     })
+    }
     const classes=useStyle();
     return(
        <div>
@@ -143,7 +149,7 @@ const Majorpage=()=>{
             </div>
             <Paper  className={classes.Feed}>
                 {Items.map((item,i)=>(
-                    <UCard1 img={item.img} title={item.title}></UCard1>
+                <UCard1 data={item}></UCard1>
                 ))}
             </Paper>
             <FooterStyle></FooterStyle>

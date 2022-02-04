@@ -5,12 +5,7 @@ import Feed from "../../component/Feed"
 import FooterStyle from '../../component/FooterStyle';
 import Carousell from '../../component/Home/Carousal';
 import Post from '../../component/Post';
-
-import img1 from "./../../Asset/University/img (1).jpg";
-import img2 from "./../../Asset/University/img (2).jpg";
-import img3 from "./../../Asset/University/img (3).jpg";
-import img4 from "./../../Asset/University/img (4).jpg";
-import img5 from "./../../Asset/University/img (5).jpg";
+import { useEffect, useState } from 'react';
 const useStyle=makeStyles((theme)=>({
     MajorList:{
         margin:"50px",
@@ -33,29 +28,21 @@ const useStyle=makeStyles((theme)=>({
 }));
 
 const Homepage=()=>{
-    const Items=[
-              
-        {
-            title:"AUPP" ,
-            img:img1
-        },
-        {
-            title:"NPIC",
-            img:img2
-        },
-        {
-            title:"RUPP",
-            img:img3
-        },
-        {
-            title:"UHS",
-            img:img4
-        },
-        {
-            title:"Norton",
-            img:img5
-        }
-    ]
+    const [Items,setItems]=useState([]);
+    useEffect(()=>{
+     loadData();
+    },[])
+    const loadData =()=>{ 
+      fetch("http://localhost:5000/University", {
+        
+        // configuration
+     })
+     .then(response => response.json())
+     .then(data => {
+       setItems(data);
+         // do something with data
+     })
+    }
     const classes=useStyle();
     return(
        <div>
@@ -118,7 +105,7 @@ const Homepage=()=>{
                         <div className={classes.Feed}>
                                         {
                                 Items.map((item)=>(
-                                <Post img={item.img} title={item.title}></Post>
+                                    <Post data={item}></Post>
                                 ))
                             }
                         </div>
