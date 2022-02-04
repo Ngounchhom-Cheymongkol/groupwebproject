@@ -37,6 +37,16 @@ const UDetail = ({data}) => {
                                         src={data.image}
                                 ></img>
                     </Paper>
+                    <Paper style={{padding:"5%"}} >
+                        <h1   style={{
+                                    color:"#05192d"
+                                }}>
+                                         - History
+                        </h1>
+                        <p>
+                            {data.Detail}
+                        </p>
+                    </Paper>
                     {/* What is major? */}
                     <Paper style={{padding:"5%"}} >
                         <h1   style={{
@@ -53,9 +63,9 @@ const UDetail = ({data}) => {
                             </h4>
                             <h4>
                                 - Official website :
-                                     <a href="http://www.rupp.edu.kh/"><Web></Web></a>
-                                    <a href="/"><YouTube> </YouTube></a>
-                                    <a href="Major"><Facebook></Facebook> </a>
+                                     <a href="http://www.rupp.edu.kh/" style={{color:"black"}}><Web></Web></a>
+                                    <a href="https://www.youtube.com/channel/UCYxOQSDwKs-_6yWFijLAjyQ" style={{color:"red"}}><YouTube> </YouTube></a>
+                                    <a href="https://www.facebook.com/chhoin68" style={{color:"blue"}}><Facebook></Facebook> </a>
                             </h4>
                         
                     </Paper>
@@ -64,18 +74,7 @@ const UDetail = ({data}) => {
                                      margin:"50px",
                                     color:"#05192d"
                                 }}>
-                                         - Subject of Civil Engineering
-                        </h1>
-                        <p>
-                            
-                        </p>
-                    </Paper>
-                    <Paper style={{padding:"5%"}} >
-                        <h1   style={{
-                                     margin:"50px",
-                                    color:"#05192d"
-                                }}>
-                                         - Civil Engineering Job
+                                         - Major
                         </h1>
                         
                         <ul>

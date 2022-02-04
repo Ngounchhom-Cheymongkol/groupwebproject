@@ -1,11 +1,14 @@
-import { Grid } from "@material-ui/core";
+import { Button, Grid } from "@material-ui/core";
 import Footer from "../../component/Footer";
 import FooterStyle from "../../component/FooterStyle";
 import HomepageNavbar from "../../component/HomepageNavbar";
-import Ucard from "../../component/University/UCard";
-import Commentbox from '../../component/Feedback/Commentbox'
-import Ratebox from "../../component/Feedback/Ratebxo";
+import Rating from '@material-ui/lab/Rating';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import './Feedback.css'
+import { useState } from "react";
 const Feedback=()=>{
+    const [value, setValue] =useState(2);
     return(
         <div>
             <HomepageNavbar></HomepageNavbar>
@@ -13,17 +16,26 @@ const Feedback=()=>{
                 height:"100vh",
                 backgroundColor:"#05192d"
             }}>
-                    <h1   style={{
-                            marginTop:"50px",
-                            color:"#05192d",
-                            width:"100%",
-                            textAlign:"center"
-                        }}>
-                            FEEDBACK
-                    </h1>
-                <Grid container>
-                    <Grid item sm={1} xs={0}></Grid><Grid item sm={4} xs={12}> <Commentbox></Commentbox> </Grid><Grid item sm={2} xs={0}></Grid><Grid item sm={4} xs={0}></Grid><Grid item sm={1} xs={0}></Grid>
-                    <Grid item sm={1} xs={0}></Grid><Grid item sm={4} xs={0}></Grid><Grid item sm={2} xs={0}></Grid><Grid item sm={4} xs={12}> <Commentbox></Commentbox> </Grid><Grid item sm={1} xs={0}></Grid>
+                <Grid container className="body" style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }}>
+                    <h1 cla="rating_heading" style={{color:"white",width:"100%",textAlign:"center"}}>5 Stars Rating </h1>
+                    <div cla="star_rating" style={{color:"white",width:"100%",textAlign:"center"}}>
+                        <Box component="fieldset" mb={3} borderColor="transparent">
+                            <Typography component="legend">How was your experience?</Typography>
+                            <Rating
+                            name="simple-controlled"
+                            value={value}
+                            onChange={(event, newValue) => {
+                                setValue(newValue);
+                            }}
+                            />
+                        </Box>
+                    <p cla="current_rating" style={{color:"white"}}>{value} of 5</p>
+                    </div>
                 </Grid>
             </div>
             <FooterStyle>

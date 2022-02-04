@@ -74,17 +74,27 @@ const Footer=()=>{
             <Grid container>
                 <Grid item xs={3} className={classes.FooterInfo1}>
                     <p>
-                    Based on your learnings from this tutorial, you are ready to make some simple GUI apps. You have to learn more methods for styling and interaction with the objects in a GUI
-                    </p>
+                    CCI stand for Cambodia College, is a website for Hight shcool student, is a website for hight school students that are just graduate could be able to consider the right major in university.</p>
                 </Grid>
                 <Grid item xs={3} className={classes.FooterInfo1}>
                     Product
+                    <ul>
+                        <li>Information about Major and University</li>
+                    </ul>
                 </Grid>
                 <Grid item xs={3} className={classes.FooterInfo1}>
                     About
+                    <p>
+                        web project of Group 5
+                    </p>
                 </Grid>
                 <Grid item xs={3} className={classes.FooterInfo1}>
                     Address
+                    <ul>
+                        <li>Faculty of Engineering</li>
+                        <li>Royal University of Phnom penh</li>
+                        <li>Phnom penh Cambodia</li>
+                    </ul>
                 </Grid>
             </Grid>
         </Container>

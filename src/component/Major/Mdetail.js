@@ -20,7 +20,6 @@ const Mdetail = ({data}) => {
                 }}>
                         {/* Major Title */}
                     <h1   style={{
-                            margin:"50px",
                             color:"#05192d"
                         }}>
                             {data.Name}
@@ -37,10 +36,9 @@ const Mdetail = ({data}) => {
                     {/* What is major? */}
                     <Paper style={{padding:"5%"}} >
                         <h1   style={{
-                                     margin:"50px",
                                     color:"#05192d"
                                 }}>
-                                         - What is Civil Engineering?
+                                         - What is {data.Name}?
                         </h1>
                         <p>
                             {data.Description}
@@ -48,33 +46,64 @@ const Mdetail = ({data}) => {
                     </Paper>
                     <Paper style={{padding:"5%"}} >
                         <h1   style={{
-                                     margin:"50px",
                                     color:"#05192d"
                                 }}>
-                                         - Subject of Civil Engineering
+                                         - Subject of {data.Name}
                         </h1>
                         <p>
                             {data.Subject}
                         </p>
                     </Paper>
-                    <Paper style={{padding:"5%"}} >
+                    <Paper style={{padding:"5%",paddingLeft:"15%"}} >
                         <h1   style={{
-                                     margin:"50px",
                                     color:"#05192d"
                                 }}>
-                                         - Civil Engineering Job
+                                         - Subject Requirement
                         </h1>
                         
                         <ul>
-                            <li>Horizontal construction engineer....</li>
-                            <li>Commissioning engineer. ..</li>
-                            <li>Civil engineer. ...</li>
-                            <li>Project engineer. ...</li>
-                            <li>Geotechnical engineer. ...</li>
-                            <li>Mining engineer. ...</li>
-                            <li>Fire engineer. ...</li>
-                            <li>Structural engineer.</li>
+                            {
+                                data.SubjectRequire.map((item)=>(
+                                    <li>{item}</li>
+                                  ))
+                            }
                         </ul>
+                    </Paper>
+                    <Paper style={{padding:"5%",paddingLeft:"15%"}} >
+                        <h1   style={{
+                                    color:"#05192d"
+                                }}>
+                                         - {data.Name} Job
+                        </h1>
+                        
+                        <ul>
+                            {
+                                data.Job.map((item)=>(
+                                    <li>{item}</li>
+                                  ))
+                            }
+                        </ul>
+                    </Paper>
+                    <Paper style={{padding:"5%",paddingLeft:"15%"}} >
+                        <h1   style={{
+                                    color:"#05192d"
+                                }}>
+                                         - University
+                        </h1>
+                        
+                        <ul style={{marginRight:"100px"}}>
+                            {
+                                data.university.map((item)=>(
+                                    <li>{item}</li>
+                                  ))
+                            }
+                        </ul>
+                        <h3   style={{
+                                    marginTop:"25px",
+                                    color:"#05192d"
+                                }}>
+                                         - Price : {data.Price}
+                        </h3>
                     </Paper>
                     <Paper style={{padding:"5%"}} >
                         <h1   style={{
